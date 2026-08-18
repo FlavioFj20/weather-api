@@ -4,7 +4,8 @@
   "description": "A weather API that fetches and returns weather data from a 3rd party API.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./dist/index.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -13,9 +14,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/FlavioFj20/weather-api/issues"
   },
-  "homepage": "https://github.com/FlavioFj20/weather-api#readme"
+  "homepage": "https://github.com/FlavioFj20/weather-api#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@types/node": "^26.2.0"
+  }
 }
